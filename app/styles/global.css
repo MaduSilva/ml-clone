@@ -1,0 +1,21 @@
+:root {
+  --font-standard: Arial, sans-serif;
+  --gray-meli: #eeeeee;
+  --yellow-meli: #fee600;
+}
+
+body {
+  background-color: var(--gray-meli);
+  font-family: var(--font-standard);
+  margin: 0;
+  padding: 0;
+}
+
+html,
+div,
+header,
+h1 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}

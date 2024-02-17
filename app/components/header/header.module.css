@@ -1,0 +1,17 @@
+.headerContainer {
+  background-color: var(--yellow-meli);
+  height: 10vh;
+}
+.logo {
+  width: 10vh;
+  padding: 10px 0;
+  height: auto;
+  margin-right: 20px;
+}
+
+.headerBox {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  margin: 0 13vw;
+}

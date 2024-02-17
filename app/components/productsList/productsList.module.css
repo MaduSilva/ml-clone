@@ -1,0 +1,57 @@
+.productsListContainer {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 20px;
+  margin: 8vh 13vw;
+}
+
+.productCard {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.productImage {
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.productInfos {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.productName {
+  font-size: 16px;
+  margin-top: -10px;
+  font-weight: 500;
+  max-width: 340px;
+}
+
+.shippingContainer {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+
+.freeShippingIcon {
+  margin-left: 10px;
+}
+
+.productInstallmentInfoText {
+  color: green;
+}
+
+.productLocation {
+  font-size: 12px;
+  text-align: end;
+}
+
+.productCardBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productAndImageContainer {
+  display: flex;
+}
