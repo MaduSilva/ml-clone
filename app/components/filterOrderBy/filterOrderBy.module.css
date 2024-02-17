@@ -1,0 +1,33 @@
+.dropdown {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  margin: 8vh 13vw;
+}
+
+.dropdown-toggle {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 5px);
+  display: none;
+  flex-direction: column;
+}
+
+.dropdown-menu.open {
+  display: block;
+}
+
+.option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}

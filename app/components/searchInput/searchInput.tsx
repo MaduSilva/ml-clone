@@ -1,18 +1,20 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Image from "next/image";
 import styles from "./searchInput.module.css";
 import searchIcon from "../../../resources/search.png";
+import GlobalContext from "@/contexts/globalContext";
 
 const SearchInput: React.FC = () => {
-  const [searchTerm, setSearchTerm] = useState("");
+  const { setSearchText } = useContext(GlobalContext);
+  const [inputText, setInputText] = useState("");
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchTerm(event.target.value);
+    setInputText(event.target.value);
   };
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log("Pesquisando por:", searchTerm);
+    setSearchText(inputText);
   };
 
   return (
@@ -20,7 +22,7 @@ const SearchInput: React.FC = () => {
       <input
         type="text"
         placeholder="Nunca dejes de buscar"
-        value={searchTerm}
+        value={inputText}
         onChange={handleChange}
         className={styles.searchInput}
       />

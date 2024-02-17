@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textContainer {
+  text-align: left;
+  margin-right: 20px;
+}
+
+.title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  font-family: sans-serif;
+}
+
+.list {
+  list-style-type: disc;
+}
+
+.link {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.image {
+  width: 100px;
+  height: auto;
+}
