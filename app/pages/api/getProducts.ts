@@ -1,10 +1,13 @@
 import Product from "@/interfaces/productsInterface";
 
-export const getProducts = async (searchText: string): Promise<Product[]> => {
+export const getProducts = async (
+  searchText: string,
+  sortBy: string = "relevance"
+): Promise<Product[]> => {
   try {
     const apiUrl = `https://api.mercadolibre.com/sites/MLA/search?q=${encodeURIComponent(
       searchText
-    )}&limit=10`;
+    )}&sort=${sortBy}&limit=10`;
     const response = await fetch(apiUrl);
     if (!response.ok) {
       throw new Error("Failed to fetch products");

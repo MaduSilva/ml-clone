@@ -6,6 +6,8 @@ interface GlobalContextType {
   setProductsData: React.Dispatch<React.SetStateAction<Product[]>>;
   searchText: string;
   setSearchText: React.Dispatch<React.SetStateAction<string>>;
+  sortBy: string;
+  setSortBy: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const GlobalContext = createContext<GlobalContextType | null>(null);
@@ -27,10 +29,18 @@ export const GlobalContextProvider: React.FC<GlobalContextProviderProps> = ({
 }) => {
   const [productsData, setProductsData] = useState<Product[]>([]);
   const [searchText, setSearchText] = useState<string>("Samsung");
+  const [sortBy, setSortBy] = useState<string>("relevance");
 
   return (
     <GlobalContext.Provider
-      value={{ productsData, setProductsData, searchText, setSearchText }}
+      value={{
+        productsData,
+        setProductsData,
+        searchText,
+        setSearchText,
+        sortBy,
+        setSortBy,
+      }}
     >
       {children}
     </GlobalContext.Provider>

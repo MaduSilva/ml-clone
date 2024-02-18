@@ -2,10 +2,10 @@ import React, { useContext, useState } from "react";
 import Image from "next/image";
 import styles from "./searchInput.module.css";
 import searchIcon from "../../../resources/search.png";
-import GlobalContext from "@/contexts/globalContext";
+import { useGlobalContext } from "@/contexts/globalContext";
 
 const SearchInput: React.FC = () => {
-  const { setSearchText } = useContext(GlobalContext);
+  const { setSearchText } = useGlobalContext();
   const [inputText, setInputText] = useState("");
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
