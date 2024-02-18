@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./filterOrderBy.module.css";
+import styles from "./SortOrderBy.module.css";
 import { useGlobalContext } from "@/contexts/globalContext";
 
 interface SortOptions {
@@ -7,12 +7,12 @@ interface SortOptions {
 }
 
 const sortOptions: SortOptions = {
-  "Mais Relevantes": "relevance",
-  "Menor preço": "price_asc",
-  "Maior preço": "price_desc",
+  "Más relevantes": "relevance",
+  "Menor precio": "price_asc",
+  "Mayor precio": "price_desc",
 };
 
-const FilterOrderBy: React.FC = () => {
+const SortOrderBy: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState("Mais Relevantes");
   const { setSortBy } = useGlobalContext();
@@ -52,4 +52,4 @@ const FilterOrderBy: React.FC = () => {
   );
 };
 
-export default FilterOrderBy;
+export default SortOrderBy;

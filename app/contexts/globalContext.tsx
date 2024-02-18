@@ -1,3 +1,4 @@
+import Filter from "@/interfaces/filterInterface";
 import Product from "@/interfaces/productsInterface";
 import { createContext, useContext, useState } from "react";
 
@@ -8,6 +9,14 @@ interface GlobalContextType {
   setSearchText: React.Dispatch<React.SetStateAction<string>>;
   sortBy: string;
   setSortBy: React.Dispatch<React.SetStateAction<string>>;
+  filtersData: Filter[];
+  setFiltersData: React.Dispatch<React.SetStateAction<Filter[]>>;
+  filterMaxPrice: string;
+  setfilterMaxPrice: React.Dispatch<React.SetStateAction<string>>;
+  filterMinPrice: string;
+  setFilterMinPrice: React.Dispatch<React.SetStateAction<string>>;
+  filterSelected: string;
+  setFilterSelected: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const GlobalContext = createContext<GlobalContextType | null>(null);
@@ -30,6 +39,10 @@ export const GlobalContextProvider: React.FC<GlobalContextProviderProps> = ({
   const [productsData, setProductsData] = useState<Product[]>([]);
   const [searchText, setSearchText] = useState<string>("Samsung");
   const [sortBy, setSortBy] = useState<string>("relevance");
+  const [filtersData, setFiltersData] = useState<Filter[]>([]);
+  const [filterMaxPrice, setfilterMaxPrice] = useState<string>("");
+  const [filterMinPrice, setFilterMinPrice] = useState<string>("");
+  const [filterSelected, setFilterSelected] = useState<string>("");
 
   return (
     <GlobalContext.Provider
@@ -40,6 +53,14 @@ export const GlobalContextProvider: React.FC<GlobalContextProviderProps> = ({
         setSearchText,
         sortBy,
         setSortBy,
+        filtersData,
+        setFiltersData,
+        filterMaxPrice,
+        setfilterMaxPrice,
+        filterMinPrice,
+        setFilterMinPrice,
+        filterSelected,
+        setFilterSelected,
       }}
     >
       {children}

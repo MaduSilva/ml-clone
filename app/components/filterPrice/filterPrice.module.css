@@ -1,0 +1,45 @@
+.priceFilter {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter {
+  margin-bottom: 20px;
+}
+
+.filter h6 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.rangeList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.rangeList li {
+  margin-top: 5px;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.input {
+  width: 100px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.separator {
+  margin: 0 10px;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
