@@ -2,10 +2,12 @@ import React, { useContext, useState } from "react";
 import Image from "next/image";
 import styles from "./searchInput.module.css";
 import searchIcon from "../../../resources/search.png";
-import { useGlobalContext } from "@/contexts/globalContext";
+import { useAppDispatch } from "@/hooks";
+import { setSearchText } from "@/redux/products/productsSlice";
 
 const SearchInput: React.FC = () => {
-  const { setSearchText } = useGlobalContext();
+  const dispatch = useAppDispatch();
+
   const [inputText, setInputText] = useState("");
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -14,7 +16,7 @@ const SearchInput: React.FC = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setSearchText(inputText);
+    dispatch(setSearchText(inputText));
   };
 
   return (

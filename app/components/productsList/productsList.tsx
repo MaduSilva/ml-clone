@@ -15,8 +15,10 @@ const ProductsList = ({ products }: { products: Product[] }) => {
             <div className={styles.productCardBox}>
               <div className={styles.productAndImageContainer}>
                 <Image
-                  width={200}
-                  height={180}
+                  width="0"
+                  height="0"
+                  sizes="100vw"
+                  style={{ width: "100%", height: "auto" }}
                   src={product.thumbnail}
                   alt={product.title}
                   className={styles.productImage}
@@ -40,17 +42,18 @@ const ProductsList = ({ products }: { products: Product[] }) => {
                   </div>
 
                   <h3 className={styles.productName}>{product.title}</h3>
-
-                  <p className={styles.productInstallmentInfoText}>
-                    En{" "}
-                    {product.installments
-                      ? product.installments.quantity
-                      : null}{" "}
-                    cuotas de ${" "}
-                    {formatValue(
-                      product.installments ? product.installments.amount : 0
-                    )}
-                  </p>
+                  {product.installments && product.installments.quantity && (
+                    <p className={styles.productInstallmentInfoText}>
+                      En{" "}
+                      {product.installments
+                        ? product.installments.quantity
+                        : null}{" "}
+                      cuotas de ${" "}
+                      {formatValue(
+                        product.installments ? product.installments.amount : 0
+                      )}
+                    </p>
+                  )}
                 </div>
               </div>
               <p className={styles.productLocation}>Location</p>

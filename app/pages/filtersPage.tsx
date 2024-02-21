@@ -1,30 +1,32 @@
-import { useEffect, useState } from "react";
-import { getFilters } from "./api/getProducts";
-import { useGlobalContext } from "@/contexts/globalContext";
+import { useEffect } from "react";
 import FilterPrice from "@/components/filterPrice/filterPrice";
+import { useAppDispatch, useAppSelector } from "@/hooks";
+import { fetchFilters } from "@/redux/filters/filtersSlice";
 
 const FiltersPage: React.FC<{ filterId: string }> = ({ filterId }) => {
-  const { filtersData, setFiltersData, searchText, sortBy, filterSelected } =
-    useGlobalContext();
+  const dispatch = useAppDispatch();
+
+  const { filtersData, sortBy, filterSelected } = useAppSelector(
+    (state) => state.filters
+  );
+
+  const { searchText } = useAppSelector((state) => state.products);
 
   useEffect(() => {
-    const fetchFilters = async () => {
+    const fetchFiltersRequest = async () => {
       try {
-        const data = await getFilters(
-          searchText,
-          sortBy,
-          filterId,
-          filterSelected
+        dispatch(
+          fetchFilters({ searchText, sortBy, filterId, filterSelected })
         );
-        setFiltersData(data);
       } catch (error) {
-        console.error("Error fetching filters:", error);
+        console.error("Error filtersPage:", error);
       }
     };
 
-    fetchFilters();
-  }, [searchText, sortBy, filterSelected]);
+    fetchFiltersRequest();
+  }, [dispatch, searchText, sortBy, filterSelected]);
 
+  console.log(filtersData);
   return (
     <div>
       <FilterPrice filters={filtersData} filterId={filterId} />

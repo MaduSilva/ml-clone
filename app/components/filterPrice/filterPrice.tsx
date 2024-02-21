@@ -3,8 +3,13 @@ import styles from "./FilterPrice.module.css";
 import Image from "next/image";
 import arrowIcon from "./arrow-right.svg";
 import Filter from "@/interfaces/filterInterface";
-import { useGlobalContext } from "@/contexts/globalContext";
 import Link from "next/link";
+import { useAppDispatch, useAppSelector } from "@/hooks";
+import {
+  setFilterMaxPrice,
+  setFilterMinPrice,
+  setFilterSelected,
+} from "@/redux/filters/filtersSlice";
 
 interface FilterPriceProps {
   filters: Filter[];
@@ -13,8 +18,7 @@ interface FilterPriceProps {
 
 const FilterPrice: React.FC<FilterPriceProps> = ({ filters, filterId }) => {
   const findFilter = filters.find((filter) => filter.id === filterId);
-  const { setfilterMaxPrice, setFilterMinPrice, setFilterSelected } =
-    useGlobalContext();
+  const dispatch = useAppDispatch();
   const [inputMax, setInputMax] = useState("");
   const [inputMin, setInputMin] = useState("");
 
@@ -32,14 +36,22 @@ const FilterPrice: React.FC<FilterPriceProps> = ({ filters, filterId }) => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setfilterMaxPrice(inputMax);
-    setFilterMinPrice(inputMin);
-    const range = `${inputMax}-${inputMin}`;
+    dispatch(setFilterMaxPrice(inputMax));
+    dispatch(setFilterMinPrice(inputMin));
+    const range =
+      inputMax && inputMin
+        ? `${inputMin}-${inputMax}`
+        : inputMax
+        ? `*-{$inputMax}`
+        : inputMin
+        ? `${inputMin}-*`
+        : "";
+
     handleOptions(range);
   };
 
-  const handleOptions = (valuesId: string) => {
-    setFilterSelected(valuesId);
+  const handleOptions = (range: string) => {
+    dispatch(setFilterSelected(range));
   };
 
   return (
@@ -73,11 +85,7 @@ const FilterPrice: React.FC<FilterPriceProps> = ({ filters, filterId }) => {
           placeholder="Máximo"
           onChange={handleChangeMax}
         />
-        <button
-          className={styles.button}
-          onClick={() => console.log("clicked")}
-          type="submit"
-        >
+        <button className={styles.button} type="submit">
           <Image height={50} width={50} src={arrowIcon} alt="Arrow right" />
         </button>
       </form>

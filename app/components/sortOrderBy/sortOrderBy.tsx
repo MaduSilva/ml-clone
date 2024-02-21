@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styles from "./SortOrderBy.module.css";
-import { useGlobalContext } from "@/contexts/globalContext";
+import Link from "next/link";
+import { useAppDispatch, useAppSelector } from "@/hooks";
+import { setSortBy } from "@/redux/filters/filtersSlice";
 
 interface SortOptions {
   [key: string]: string;
@@ -13,9 +15,9 @@ const sortOptions: SortOptions = {
 };
 
 const SortOrderBy: React.FC = () => {
+  const dispatch = useAppDispatch();
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState("Mais Relevantes");
-  const { setSortBy } = useGlobalContext();
+  const [selectedOption, setSelectedOption] = useState("Más relevantes");
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -24,15 +26,19 @@ const SortOrderBy: React.FC = () => {
   const handleOptionClick = (option: string) => {
     setSelectedOption(option);
     setIsOpen(false);
-    setSortBy(sortOptions[option]);
+    dispatch(setSortBy(sortOptions[option]));
   };
 
   return (
     <div className={styles.dropdown}>
-      <p>Ordenar por </p>
-      <button className={styles["dropdown-toggle"]} onClick={toggleDropdown}>
+      <p className={styles.orderByText}>Ordenar por </p>
+      <Link
+        href={"/"}
+        className={styles["dropdown-toggle"]}
+        onClick={toggleDropdown}
+      >
         {selectedOption} {isOpen ? "▲" : "▼"}
-      </button>
+      </Link>
       {isOpen && (
         <div
           className={`${styles["dropdown-menu"]} ${isOpen ? styles.open : ""}`}

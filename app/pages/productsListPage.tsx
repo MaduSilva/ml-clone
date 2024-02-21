@@ -1,29 +1,31 @@
-import { useEffect, useState } from "react";
-import { getProducts } from "./api/getProducts";
+import { useEffect } from "react";
 import ProductsList from "@/components/productsList/productsList";
-import { useGlobalContext } from "@/contexts/globalContext";
+import { fetchProducts } from "../redux/products/productsSlice";
+import { useAppSelector, useAppDispatch } from "../hooks";
 
-const ProductsListPage: React.FC<{ filterId: string }> = ({ filterId }) => {
-  const { productsData, setProductsData, searchText, sortBy, filterSelected } =
-    useGlobalContext();
+const ProductsListPage: React.FC = () => {
+  const dispatch = useAppDispatch();
+
+  const { productsData, searchText } = useAppSelector(
+    (state) => state.products
+  );
+  const { sortBy, filterSelected, filterId } = useAppSelector(
+    (state) => state.filters
+  );
 
   useEffect(() => {
-    const fetchProducts = async () => {
+    const fetchProductsRequest = async () => {
       try {
-        const data = await getProducts(
-          searchText,
-          sortBy,
-          filterId,
-          filterSelected
+        dispatch(
+          fetchProducts({ searchText, sortBy, filterId, filterSelected })
         );
-        setProductsData(data);
       } catch (error) {
-        console.error("Error fetching products:", error);
+        console.error("Error productsListPage:", error);
       }
     };
 
-    fetchProducts();
-  }, [searchText, sortBy, filterSelected]);
+    fetchProductsRequest();
+  }, [dispatch, sortBy, searchText, filterSelected]);
 
   return (
     <div>

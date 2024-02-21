@@ -4,13 +4,13 @@ import Product from "@/interfaces/productsInterface";
 export const getProducts = async (
   searchText: string,
   sortBy: string = "relevance",
-  filterId: string = '',
-  valuesId: string = ''
+  filterId: string = "",
+  filterSelected: string = ""
 ): Promise<Product[]> => {
   try {
     const apiUrl = `https://api.mercadolibre.com/sites/MLA/search?q=${encodeURIComponent(
       searchText
-    )}&sort=${sortBy}&${filterId}=${valuesId}&limit=10`;
+    )}&sort=${sortBy}&${filterId}=${filterSelected}&limit=10`;
     const response = await fetch(apiUrl);
     if (!response.ok) {
       throw new Error("Failed to fetch products");
@@ -26,13 +26,13 @@ export const getProducts = async (
 export const getFilters = async (
   searchText: string,
   sortBy: string = "relevance",
-  filterId: string = '',
-  valuesId: string = ''
+  filterId: string = "",
+  filterSelected: string = ""
 ): Promise<Filter[]> => {
   try {
     const apiUrl = `https://api.mercadolibre.com/sites/MLA/search?q=${encodeURIComponent(
       searchText
-    )}&sort=${sortBy}&${filterId}=${valuesId}&limit=10`;
+    )}&sort=${sortBy}&${filterId}=${filterSelected}&limit=10`;
     const response = await fetch(apiUrl);
     if (!response.ok) {
       throw new Error("Failed to fetch filters");
