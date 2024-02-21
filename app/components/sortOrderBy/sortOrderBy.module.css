@@ -1,8 +1,8 @@
 .dropdown {
   display: flex;
+  align-self: end;
+  margin-left: auto;
   position: relative;
-  justify-content: flex-end;
-  margin: 8vh 13vw;
 }
 
 .orderByText {
@@ -22,6 +22,7 @@
   font-size: 14px;
   text-decoration: none;
   transition-duration: 0.1s;
+  
 }
 
 .dropdown-toggle img {
@@ -35,12 +36,12 @@
 .dropdown-menu {
   position: absolute;
   top: calc(100% + 5px);
-  display: none;
-  flex-direction: column;
+
 }
 
 .dropdown-menu.open {
   display: block;
+  right: 0;
   margin-top: -20px;
   color: #666;
   font-size: 14px;
@@ -48,21 +49,27 @@
   border: 1px solid transparent;
   border-radius: 5px;
   background-color: white;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.12);
 }
 
 .option {
   padding: 10px;
   cursor: pointer;
+  border: 1px solid transparent;
   border-bottom: 1px solid #d8d8d8;
-  border-left: 1px solid transparent;
-  border-right: 1px solid transparent;
-  border-top: 1px solid transparent;
   border-radius: 2px;
   text-align: left;
+  font-size: 14px;
 }
 
 .option:hover {
   background-color: #f0f0f0;
   color: #3e88f9;
   border-left: 5px solid #3e88f9;
+}
+
+@media (max-width: 620px) {
+  .dropdown {
+    margin-left: 0;
+  }
 }

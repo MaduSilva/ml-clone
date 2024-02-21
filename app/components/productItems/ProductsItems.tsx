@@ -3,7 +3,7 @@ import Image from "next/image";
 import freeShippingIcon from "../../../resources/freeShipping.png";
 import Product from "@/interfaces/Products";
 import { getCurrencySymbol } from "@/utils/currencyFormater";
-import { formatValue } from "@/utils/valueFormater";
+import { formatValue } from "@/utils/formatValue";
 import ErrorMessage from "../errorMessage/ErrorMessage";
 
 const ProductsItems = ({ products }: { products: Product[] }) => {
@@ -19,16 +19,20 @@ const ProductsItems = ({ products }: { products: Product[] }) => {
           <div key={product.id} className={styles.productCard}>
             <div className={styles.productCardBox}>
               <div className={styles.productAndImageContainer}>
+              <div className={styles.productImage}>
+                
                 <Image
-                  width="0"
-                  height="0"
-                  sizes="100vw"
-                  style={{ width: "100%", height: "auto" }}
-                  src={product.thumbnail}
-                  alt={product.title}
-                  className={styles.productImage}
-                  onClick={() => goToProductUrl(product.permalink)}
-                />
+                     
+                     width="0"
+                     height="0"
+                     sizes="100vw"
+                     style={{ width: '250px', height: '250px', objectFit: 'cover' }}
+                     src={product.thumbnail}
+                     alt={product.title}
+                     onClick={() => goToProductUrl(product.permalink)}
+                     />
+                     </div>
+            
                 <div className={styles.productInfos}>
                   <div onClick={() => goToProductUrl(product.permalink)} className={styles.shippingContainer}>
                     <p>
@@ -54,7 +58,7 @@ const ProductsItems = ({ products }: { products: Product[] }) => {
                       {product.installments
                         ? product.installments.quantity
                         : null}{" "}
-                      cuotas de ${" "}
+                      cuotas de $
                       {formatValue(
                         product.installments ? product.installments.amount : 0
                       )}
@@ -62,7 +66,7 @@ const ProductsItems = ({ products }: { products: Product[] }) => {
                   )}
                 </div>
               </div>
-              <p className={styles.productLocation}>Location</p>
+              {/* <p className={styles.productLocation}>Location</p> */}
             </div>
           </div>
         ))

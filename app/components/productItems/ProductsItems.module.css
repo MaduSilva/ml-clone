@@ -8,6 +8,7 @@
 .productCard {
   border-radius: 5px;
   margin-bottom: 10px;
+  border-bottom: 1px solid var(--gray-meli);
 }
 
 .productImage {
@@ -23,17 +24,18 @@
 }
 
 .productName {
-  font-size: 16px;
-  margin-top: -10px;
+  font-size: 18px;
+  margin-top: 10px;
   font-weight: 500;
-  max-width: 340px;
+  max-width: 500px;
   cursor: pointer;
 }
 
 .shippingContainer {
   display: flex;
   align-items: center;
-  font-size: 25px;
+  font-size: 20px;
+  white-space: nowrap;
 }
 
 .shippingContainer p {
@@ -55,9 +57,47 @@
 
 .productCardBox {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .productAndImageContainer {
   display: flex;
 }
+
+@media (max-width: 768px) {
+  .productImage {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .productImage img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+  }
+
+  .productAndImageContainer {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .productInfos {
+    align-items: center;
+    
+  }
+
+  .productName {
+    max-width: none;
+    text-align: center;
+  }
+
+  .productCardBox {
+    justify-content: center;
+  }
+
+  .productInstallmentInfoText{
+    text-align: center;
+  }
+}
+

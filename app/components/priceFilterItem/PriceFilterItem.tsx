@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import styles from "./PriceFilterItem.module.css";
 import Image from "next/image";
-import arrowIcon from "../../../resources/arrow-right.svg";
+import arrowIcon from "../../../resources/expand-right-circle.svg";
 import Filter from "@/interfaces/Filter";
 import Link from "next/link";
-import { useAppDispatch, useAppSelector } from "@/hooks";
+import { useAppDispatch } from "@/hooks";
 import {
   setFilterMaxPrice,
   setFilterMinPrice,
   setFilterSelected,
 } from "@/redux/filters/filtersSlice";
+import { formatValue } from "../../utils/formatValue";
 
 interface FilterPriceProps {
   filters: Filter[];
@@ -55,9 +56,9 @@ const PriceFilterItem: React.FC<FilterPriceProps> = ({ filters, filterId }) => {
   };
 
   return (
-    <div className={styles.priceFilter}>
-      <div key={findFilter.id} className={styles.filter}>
-        <h6>{findFilter.name}</h6>
+    <div className={styles.priceFilterContainer}>
+      <div key={findFilter.id}>
+        <p className={styles.filterTitle}>{findFilter.name}</p>
         <ul className={styles.rangeList}>
           {findFilter.values.map((range) => (
             <Link
@@ -66,8 +67,11 @@ const PriceFilterItem: React.FC<FilterPriceProps> = ({ filters, filterId }) => {
               key={range.id}
             >
               <p>
-                {" "}
-                {range.name}({range.results})
+                {range.name} 
+                <span className={styles.rangeQuantity}>
+                ({formatValue(range.results)})
+                </span>
+                
               </p>
             </Link>
           ))}
@@ -79,14 +83,14 @@ const PriceFilterItem: React.FC<FilterPriceProps> = ({ filters, filterId }) => {
           placeholder="Mínimo"
           onChange={handleChangeMin}
         />
-        <span className={styles.separator}>-</span>
+        <span className={styles.separator}>—</span>
         <input
           className={styles.input}
           placeholder="Máximo"
           onChange={handleChangeMax}
         />
         <button className={styles.button} type="submit">
-          <Image height={50} width={50} src={arrowIcon} alt="Arrow right" />
+          <Image height={30} width={30} src={arrowIcon} alt="Arrow right" />
         </button>
       </form>
     </div>

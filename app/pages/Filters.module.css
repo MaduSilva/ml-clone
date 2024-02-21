@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  margin: 8vh 13vw;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+}
