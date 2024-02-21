@@ -6,12 +6,12 @@
 }
 
 .orderByText {
-  font-weight: 600;
+  font-weight: 500;
   color: #333;
   font-size: 14px;
   line-height: 1.7;
   margin-right: 6px;
-  white-space: nowrap;
+  font-family: var(--font-p);
 }
 
 .dropdown-toggle {
@@ -22,6 +22,10 @@
   font-size: 14px;
   text-decoration: none;
   transition-duration: 0.1s;
+}
+
+.dropdown-toggle img {
+  transition: transform 0.1s ease-out;  /* Adiciona uma transição suave para a transformação do ícone */
 }
 
 .dropdown-toggle:hover {
@@ -37,19 +41,19 @@
 
 .dropdown-menu.open {
   display: block;
-
+  margin-top: -20px;
   color: #666;
   font-size: 14px;
   font-weight: 300;
   border: 1px solid transparent;
-  border-radius: 10px;
+  border-radius: 5px;
+  background-color: white;
 }
 
 .option {
   padding: 10px;
   cursor: pointer;
   border-bottom: 1px solid #d8d8d8;
-  background-color: white;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
   border-top: 1px solid transparent;

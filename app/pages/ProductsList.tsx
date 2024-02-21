@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import ProductsList from "@/components/productsList/productsList";
+import ProductsItems from "@/components/productItems/ProductsItems";
 import { fetchProducts } from "../redux/products/productsSlice";
 import { useAppSelector, useAppDispatch } from "../hooks";
 
-const ProductsListPage: React.FC = () => {
+const ProductsList: React.FC = () => {
   const dispatch = useAppDispatch();
 
   const { productsData, searchText } = useAppSelector(
@@ -20,7 +20,7 @@ const ProductsListPage: React.FC = () => {
           fetchProducts({ searchText, sortBy, filterId, filterSelected })
         );
       } catch (error) {
-        console.error("Error productsListPage:", error);
+        console.error("Error ProductsList:", error);
       }
     };
 
@@ -29,9 +29,9 @@ const ProductsListPage: React.FC = () => {
 
   return (
     <div>
-      <ProductsList products={productsData} />
+      <ProductsItems products={productsData} />
     </div>
   );
 };
 
-export default ProductsListPage;
+export default ProductsList;

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import styles from "./SortOrderBy.module.css";
 import Link from "next/link";
-import { useAppDispatch, useAppSelector } from "@/hooks";
+import Image from "next/image";
+import { useAppDispatch } from "@/hooks";
 import { setSortBy } from "@/redux/filters/filtersSlice";
+import expandIcon from '../../../resources/expand-more.svg'
 
 interface SortOptions {
   [key: string]: string;
@@ -33,12 +35,12 @@ const SortOrderBy: React.FC = () => {
     <div className={styles.dropdown}>
       <p className={styles.orderByText}>Ordenar por </p>
       <Link
-        href={"/"}
-        className={styles["dropdown-toggle"]}
-        onClick={toggleDropdown}
-      >
-        {selectedOption} {isOpen ? "▲" : "▼"}
-      </Link>
+      href={"/"}
+      className={`${styles["dropdown-toggle"]} ${isOpen ? styles["open"] : ""}`}
+      onClick={toggleDropdown}
+    >
+      {selectedOption} <Image src={expandIcon} alt="Veja mais" style={{ transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)' }} />
+    </Link>
       {isOpen && (
         <div
           className={`${styles["dropdown-menu"]} ${isOpen ? styles.open : ""}`}

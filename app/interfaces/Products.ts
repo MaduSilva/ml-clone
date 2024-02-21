@@ -12,6 +12,7 @@ interface Product {
   shipping: {
     free_shipping: boolean;
   };
+  permalink: string;
 }
 
 export default Product;

@@ -13,6 +13,7 @@
 .productImage {
   border-radius: 5px;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .productInfos {
@@ -26,12 +27,17 @@
   margin-top: -10px;
   font-weight: 500;
   max-width: 340px;
+  cursor: pointer;
 }
 
 .shippingContainer {
   display: flex;
   align-items: center;
   font-size: 25px;
+}
+
+.shippingContainer p {
+  cursor: pointer;
 }
 
 .freeShippingIcon {

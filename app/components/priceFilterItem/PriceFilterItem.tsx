@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import styles from "./FilterPrice.module.css";
+import styles from "./PriceFilterItem.module.css";
 import Image from "next/image";
-import arrowIcon from "./arrow-right.svg";
-import Filter from "@/interfaces/filterInterface";
+import arrowIcon from "../../../resources/arrow-right.svg";
+import Filter from "@/interfaces/Filter";
 import Link from "next/link";
 import { useAppDispatch, useAppSelector } from "@/hooks";
 import {
@@ -16,7 +16,7 @@ interface FilterPriceProps {
   filterId: string;
 }
 
-const FilterPrice: React.FC<FilterPriceProps> = ({ filters, filterId }) => {
+const PriceFilterItem: React.FC<FilterPriceProps> = ({ filters, filterId }) => {
   const findFilter = filters.find((filter) => filter.id === filterId);
   const dispatch = useAppDispatch();
   const [inputMax, setInputMax] = useState("");
@@ -93,4 +93,4 @@ const FilterPrice: React.FC<FilterPriceProps> = ({ filters, filterId }) => {
   );
 };
 
-export default FilterPrice;
+export default PriceFilterItem;

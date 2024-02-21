@@ -1,7 +1,6 @@
-import SortOrderBy from "@/components/sortOrderBy/sortOrderBy";
 import Layout from "@/components/layout";
-import ProductsListPage from "./productsListPage";
-import FiltersPage from "./filtersPage";
+import ProductsList from "./ProductsList";
+import Filters from "./Filters";
 import { Provider } from "react-redux";
 
 import { store } from "../redux/store";
@@ -11,9 +10,8 @@ export default function Home() {
     <div>
       <Provider store={store}>
         <Layout>
-          <SortOrderBy />
-          <FiltersPage filterId={"price"} />
-          <ProductsListPage />
+          <Filters />
+          <ProductsList />
         </Layout>
       </Provider>
     </div>

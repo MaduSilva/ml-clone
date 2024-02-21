@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import FilterPrice from "@/components/filterPrice/filterPrice";
+import PriceFilterItem from "../components/priceFilterItem/PriceFilterItem";
 import { useAppDispatch, useAppSelector } from "@/hooks";
 import { fetchFilters } from "@/redux/filters/filtersSlice";
 
-const FiltersPage: React.FC<{ filterId: string }> = ({ filterId }) => {
+const PriceFilter: React.FC<{ filterId: string }> = ({ filterId }) => {
   const dispatch = useAppDispatch();
 
   const { filtersData, sortBy, filterSelected } = useAppSelector(
@@ -19,19 +19,18 @@ const FiltersPage: React.FC<{ filterId: string }> = ({ filterId }) => {
           fetchFilters({ searchText, sortBy, filterId, filterSelected })
         );
       } catch (error) {
-        console.error("Error filtersPage:", error);
+        console.error("Error PriceFilter:", error);
       }
     };
 
     fetchFiltersRequest();
   }, [dispatch, searchText, sortBy, filterSelected]);
 
-  console.log(filtersData);
   return (
     <div>
-      <FilterPrice filters={filtersData} filterId={filterId} />
+      <PriceFilterItem filters={filtersData} filterId={filterId} />
     </div>
   );
 };
 
-export default FiltersPage;
+export default PriceFilter;

@@ -2,13 +2,9 @@ import React from "react";
 import Image from "next/image";
 import styles from "./header.module.css";
 import logo from "../../../resources/logo_ml.png";
-import SearchInput from "../searchInput/searchInput";
+import SearchInput from "../searchInput/SearchInput";
 
-interface HeaderProps {
-  title: string;
-}
-
-const Header: React.FC<HeaderProps> = () => {
+const Header: React.FC = () => {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.headerBox}>

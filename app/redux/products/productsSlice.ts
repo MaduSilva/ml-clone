@@ -1,7 +1,7 @@
-import Product from "@/interfaces/productsInterface";
+import Product from "@/interfaces/Products";
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
-import FetchProductsParams from "@/interfaces/fetchProductsParamsInterface";
-import { getProducts } from "../../pages/api/getProducts";
+import FetchProductsParams from "@/interfaces/FetchProductsParams";
+import { getProducts } from "../../services/api/getProducts";
 
 export interface ProductState {
   productsData: Product[];

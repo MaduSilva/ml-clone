@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
-import FetchProductsParams from "@/interfaces/fetchProductsParamsInterface";
-import { getFilters, getProducts } from "../../pages/api/getProducts";
-import Filter from "@/interfaces/filterInterface";
+import FetchProductsParams from "@/interfaces/FetchProductsParams";
+import { getFilters } from "../../services/api/getFilters";
+import Filter from "@/interfaces/Filter";
 
 export interface FiltersState {
   filtersData: Filter[];

@@ -1,12 +1,17 @@
-import styles from "./productsList.module.css";
+import styles from "./ProductsItems.module.css";
 import Image from "next/image";
 import freeShippingIcon from "../../../resources/freeShipping.png";
-import Product from "@/interfaces/productsInterface";
+import Product from "@/interfaces/Products";
 import { getCurrencySymbol } from "@/utils/currencyFormater";
 import { formatValue } from "@/utils/valueFormater";
-import ErrorMessage from "../ErrorMessage/ErrorMessage";
+import ErrorMessage from "../errorMessage/ErrorMessage";
 
-const ProductsList = ({ products }: { products: Product[] }) => {
+const ProductsItems = ({ products }: { products: Product[] }) => {
+
+  const goToProductUrl =  (url: string) => {
+    window.open(url, '_blank');
+  };
+
   return (
     <div className={styles.productsListContainer}>
       {products.length !== 0 ? (
@@ -22,9 +27,10 @@ const ProductsList = ({ products }: { products: Product[] }) => {
                   src={product.thumbnail}
                   alt={product.title}
                   className={styles.productImage}
+                  onClick={() => goToProductUrl(product.permalink)}
                 />
                 <div className={styles.productInfos}>
-                  <div className={styles.shippingContainer}>
+                  <div onClick={() => goToProductUrl(product.permalink)} className={styles.shippingContainer}>
                     <p>
                       {" "}
                       {getCurrencySymbol(product.currency_id)}{" "}
@@ -41,7 +47,7 @@ const ProductsList = ({ products }: { products: Product[] }) => {
                     )}
                   </div>
 
-                  <h3 className={styles.productName}>{product.title}</h3>
+                  <h3 onClick={() => goToProductUrl(product.permalink)} className={styles.productName}>{product.title}</h3>
                   {product.installments && product.installments.quantity && (
                     <p className={styles.productInstallmentInfoText}>
                       En{" "}
@@ -67,4 +73,4 @@ const ProductsList = ({ products }: { products: Product[] }) => {
   );
 };
 
-export default ProductsList;
+export default ProductsItems;
