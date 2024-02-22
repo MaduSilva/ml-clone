@@ -3,8 +3,10 @@ import { Html, Head, Main, NextScript } from 'next/document'
 export default function Document() {
   return (
     <Html lang="en">
+      <Head>
+      <title>Mercado Libre Argentina - Envíos Gratis en el día</title>
+      </Head>
       <body>
-        <Head/>
         <Main />
         <NextScript />
       </body>

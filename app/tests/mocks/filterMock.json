@@ -1,0 +1,1580 @@
+[
+    {
+      "id": "official_store",
+      "name": "Tiendas oficiales",
+      "type": "text",
+      "values": [
+        {
+          "id": "all",
+          "name": "Todas las tiendas oficiales",
+          "results": 56
+        }
+      ]
+    },
+    {
+      "id": "discount",
+      "name": "Descuentos",
+      "type": "number",
+      "values": [
+        {
+          "id": "5-100",
+          "name": "Desde 5% OFF",
+          "results": 12326
+        },
+        {
+          "id": "10-100",
+          "name": "Desde 10% OFF",
+          "results": 3445
+        },
+        {
+          "id": "15-100",
+          "name": "Desde 15% OFF",
+          "results": 2461
+        },
+        {
+          "id": "20-100",
+          "name": "Desde 20% OFF",
+          "results": 2025
+        },
+        {
+          "id": "25-100",
+          "name": "Desde 25% OFF",
+          "results": 1743
+        },
+        {
+          "id": "30-100",
+          "name": "Desde 30% OFF",
+          "results": 1519
+        },
+        {
+          "id": "40-100",
+          "name": "Desde 40% OFF",
+          "results": 423
+        },
+        {
+          "id": "60-100",
+          "name": "Desde 60% OFF",
+          "results": 28
+        }
+      ]
+    },
+    {
+      "id": "price",
+      "name": "Precio",
+      "type": "range",
+      "values": [
+        {
+          "id": "1222.0-4000.0",
+          "name": "$1.222 a $4.000",
+          "results": 20779
+        },
+        {
+          "id": "4000.0-7000.0",
+          "name": "$4.000 a $7.000",
+          "results": 23188
+        },
+        {
+          "id": "7000.0-12500.0",
+          "name": "$7.000 a $12.500",
+          "results": 22227
+        }
+      ]
+    },
+    {
+      "id": "accepts_mercadopago",
+      "name": "Filtro por MercadoPago",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Con MercadoPago",
+          "results": 66194
+        }
+      ]
+    },
+    {
+      "id": "installments",
+      "name": "Financiación",
+      "type": "text",
+      "values": [
+        {
+          "id": "yes",
+          "name": "En cuotas",
+          "results": 66194
+        },
+        {
+          "id": "no_interest",
+          "name": "Sin interés",
+          "results": 2720
+        }
+      ]
+    },
+    {
+      "id": "shipping",
+      "name": "Envío",
+      "type": "text",
+      "values": [
+        {
+          "id": "mercadoenvios",
+          "name": "Mercado Envíos",
+          "results": 65228
+        },
+        {
+          "id": "fulfillment",
+          "name": "Full",
+          "results": 1584
+        }
+      ]
+    },
+    {
+      "id": "power_seller",
+      "name": "Filtro por calidad de vendedores",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Mejores vendedores",
+          "results": 39507
+        }
+      ]
+    },
+    {
+      "id": "since",
+      "name": "Filtro por fecha de comienzo",
+      "type": "text",
+      "values": [
+        {
+          "id": "today",
+          "name": "Publicados hoy",
+          "results": 378
+        }
+      ]
+    },
+    {
+      "id": "has_video",
+      "name": "Filtro por publicaciones con video",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Publicaciones con video",
+          "results": 4722
+        }
+      ]
+    },
+    {
+      "id": "has_pictures",
+      "name": "Filtro por publicaciones con imágenes",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Con fotos",
+          "results": 66194
+        }
+      ]
+    },
+    {
+      "id": "all_payment_methods_discount",
+      "name": "Descuentos para todos los medios de pago",
+      "type": "number",
+      "values": [
+        {
+          "id": "1-100",
+          "name": "Desde 1% OFF",
+          "results": 8016
+        },
+        {
+          "id": "5-100",
+          "name": "Desde 5% OFF",
+          "results": 7456
+        },
+        {
+          "id": "10-100",
+          "name": "Desde 10% OFF",
+          "results": 902
+        },
+        {
+          "id": "15-100",
+          "name": "Desde 15% OFF",
+          "results": 367
+        },
+        {
+          "id": "20-100",
+          "name": "Desde 20% OFF",
+          "results": 339
+        },
+        {
+          "id": "25-100",
+          "name": "Desde 25% OFF",
+          "results": 283
+        },
+        {
+          "id": "30-100",
+          "name": "Desde 30% OFF",
+          "results": 269
+        }
+      ]
+    },
+    {
+      "id": "price_campaign_id",
+      "name": "Campaña",
+      "type": "number",
+      "values": [
+        {
+          "id": "P-MLA13799022",
+          "name": "P-MLA13799022",
+          "results": 16
+        },
+        {
+          "id": "MLA50531",
+          "name": "MLA50531",
+          "results": 6
+        },
+        {
+          "id": "P-MLA13794050",
+          "name": "P-MLA13794050",
+          "results": 5
+        },
+        {
+          "id": "P-MLA13857022",
+          "name": "P-MLA13857022",
+          "results": 1
+        }
+      ]
+    },
+    {
+      "id": "promotion_type",
+      "name": "Tipo de promoción",
+      "type": "text",
+      "values": [
+        {
+          "id": "deal_of_the_day",
+          "name": "Oferta del día",
+          "results": 2
+        }
+      ]
+    },
+    {
+      "id": "state",
+      "name": "Ubicación",
+      "type": "text",
+      "values": [
+        {
+          "id": "TUxBUENBUGw3M2E1",
+          "name": "Capital Federal",
+          "results": 34058
+        },
+        {
+          "id": "TUxBUEdSQWVmNTVm",
+          "name": "Bs.As. G.B.A. Oeste",
+          "results": 8398
+        },
+        {
+          "id": "TUxBUEdSQXJlMDNm",
+          "name": "Bs.As. G.B.A. Sur",
+          "results": 7138
+        },
+        {
+          "id": "TUxBUEdSQWU4ZDkz",
+          "name": "Bs.As. G.B.A. Norte",
+          "results": 4275
+        },
+        {
+          "id": "TUxBUFpPTmFpbnRl",
+          "name": "Buenos Aires Interior",
+          "results": 3543
+        },
+        {
+          "id": "TUxBUENPUmFkZGIw",
+          "name": "Córdoba",
+          "results": 2342
+        },
+        {
+          "id": "TUxBUEVOVHMzNTdm",
+          "name": "Entre Ríos",
+          "results": 1330
+        },
+        {
+          "id": "TUxBUFNBTmU5Nzk2",
+          "name": "Santa Fe",
+          "results": 1204
+        },
+        {
+          "id": "TUxBUENPU2ExMmFkMw",
+          "name": "Bs.As. Costa Atlántica",
+          "results": 616
+        },
+        {
+          "id": "TUxBUE1FTmE5OWQ4",
+          "name": "Mendoza",
+          "results": 476
+        },
+        {
+          "id": "TUxBUFRVQ244NmM3",
+          "name": "Tucumán",
+          "results": 154
+        },
+        {
+          "id": "TUxBUE5FVW4xMzMzNQ",
+          "name": "Neuquén",
+          "results": 84
+        },
+        {
+          "id": "TUxBUFNBTno3ZmY5",
+          "name": "Santa Cruz",
+          "results": 84
+        },
+        {
+          "id": "TUxBUEpVSnk3YmUz",
+          "name": "Jujuy",
+          "results": 70
+        },
+        {
+          "id": "TUxBUENIQW8xMTNhOA",
+          "name": "Chaco",
+          "results": 42
+        },
+        {
+          "id": "TUxBUFNBTGFjMTJi",
+          "name": "Salta",
+          "results": 42
+        },
+        {
+          "id": "TUxBUENIVXQxNDM1MQ",
+          "name": "Chubut",
+          "results": 28
+        },
+        {
+          "id": "TUxBUExBWmEyNzY0",
+          "name": "La Rioja",
+          "results": 28
+        },
+        {
+          "id": "TUxBUE1JU3MzNjIx",
+          "name": "Misiones",
+          "results": 14
+        },
+        {
+          "id": "TUxBUFLNT29iZmZm",
+          "name": "Río Negro",
+          "results": 14
+        },
+        {
+          "id": "TUxBUFNBTnM0ZTcz",
+          "name": "San Luis",
+          "results": 14
+        }
+      ]
+    },
+    {
+      "id": "shipping_cost",
+      "name": "Costo de envío",
+      "type": "text",
+      "values": [
+        {
+          "id": "free",
+          "name": "Gratis",
+          "results": 336
+        }
+      ]
+    },
+    {
+      "id": "BRAND",
+      "name": "Marca",
+      "type": "STRING",
+      "values": [
+        {
+          "id": "276243",
+          "name": "Genérica",
+          "results": 17784
+        },
+        {
+          "id": "206",
+          "name": "Samsung",
+          "results": 10205
+        },
+        {
+          "id": "2131342",
+          "name": "Soul",
+          "results": 2314
+        },
+        {
+          "id": "12298906",
+          "name": "Devia",
+          "results": 1378
+        },
+        {
+          "id": "15886180",
+          "name": "Mobile Parts",
+          "results": 1170
+        },
+        {
+          "id": "2551756",
+          "name": "Panda",
+          "results": 923
+        },
+        {
+          "id": "5160021",
+          "name": "Sun Shine",
+          "results": 767
+        },
+        {
+          "id": "5466267",
+          "name": "LC",
+          "results": 624
+        },
+        {
+          "id": "5512424",
+          "name": "Norcel",
+          "results": 520
+        },
+        {
+          "id": "13951494",
+          "name": "LYR",
+          "results": 507
+        },
+        {
+          "id": "16086779",
+          "name": "Sansumg",
+          "results": 468
+        },
+        {
+          "id": "59772",
+          "name": "OEM",
+          "results": 442
+        },
+        {
+          "id": "12189922",
+          "name": "Hydroglass",
+          "results": 325
+        },
+        {
+          "id": "10953911",
+          "name": "Ibek",
+          "results": 312
+        },
+        {
+          "id": "13687192",
+          "name": "Legatus",
+          "results": 286
+        },
+        {
+          "id": "13210911",
+          "name": "Mikra",
+          "results": 247
+        },
+        {
+          "id": "2804265",
+          "name": "SM",
+          "results": 208
+        },
+        {
+          "id": "12472771",
+          "name": "Moto",
+          "results": 195
+        },
+        {
+          "id": "2503",
+          "name": "Motorola",
+          "results": 182
+        },
+        {
+          "id": "20918055",
+          "name": "BAH",
+          "results": 182
+        },
+        {
+          "id": "2786002",
+          "name": "Original",
+          "results": 169
+        },
+        {
+          "id": "2081354",
+          "name": "Puxida",
+          "results": 169
+        },
+        {
+          "id": "5999177",
+          "name": "Soft",
+          "results": 156
+        },
+        {
+          "id": "1133512",
+          "name": "Skyway",
+          "results": 143
+        },
+        {
+          "id": "191958",
+          "name": "West",
+          "results": 130
+        },
+        {
+          "id": "14403682",
+          "name": "DLP",
+          "results": 130
+        },
+        {
+          "id": "15928122",
+          "name": "CG",
+          "results": 117
+        },
+        {
+          "id": "215",
+          "name": "LG",
+          "results": 104
+        },
+        {
+          "id": "12179116",
+          "name": "Artiko",
+          "results": 104
+        },
+        {
+          "id": "4839487",
+          "name": "One Touch",
+          "results": 91
+        },
+        {
+          "id": "12298016",
+          "name": "Haxly",
+          "results": 91
+        },
+        {
+          "id": "10151",
+          "name": "DBS",
+          "results": 91
+        },
+        {
+          "id": "6298396",
+          "name": "SG",
+          "results": 78
+        },
+        {
+          "id": "410979",
+          "name": "Noga",
+          "results": 78
+        },
+        {
+          "id": "260594",
+          "name": "SMS",
+          "results": 78
+        },
+        {
+          "id": "13914270",
+          "name": "Protection Mobile",
+          "results": 78
+        },
+        {
+          "id": "5310127",
+          "name": "iTech",
+          "results": 52
+        },
+        {
+          "id": "2786922",
+          "name": "Carbono",
+          "results": 52
+        },
+        {
+          "id": "170983",
+          "name": "Silicone",
+          "results": 52
+        },
+        {
+          "id": "936154",
+          "name": "Kube",
+          "results": 39
+        },
+        {
+          "id": "9079620",
+          "name": "SoporTime",
+          "results": 39
+        },
+        {
+          "id": "2788930",
+          "name": "MD",
+          "results": 39
+        },
+        {
+          "id": "2426343",
+          "name": "Dinax",
+          "results": 39
+        },
+        {
+          "id": "22294789",
+          "name": "Megan Tech",
+          "results": 39
+        },
+        {
+          "id": "17005170",
+          "name": "Geneic",
+          "results": 39
+        },
+        {
+          "id": "16011673",
+          "name": "Alitoys",
+          "results": 39
+        },
+        {
+          "id": "14218878",
+          "name": "Zcom",
+          "results": 39
+        },
+        {
+          "id": "13784170",
+          "name": "I & O",
+          "results": 39
+        },
+        {
+          "id": "13764894",
+          "name": "Wireless",
+          "results": 39
+        },
+        {
+          "id": "114658",
+          "name": "Ringke",
+          "results": 39
+        },
+        {
+          "id": "9819865",
+          "name": "Alitrade",
+          "results": 26
+        },
+        {
+          "id": "83764",
+          "name": "GTC",
+          "results": 26
+        },
+        {
+          "id": "6771339",
+          "name": "Alo",
+          "results": 26
+        },
+        {
+          "id": "6453294",
+          "name": "Maxim",
+          "results": 26
+        },
+        {
+          "id": "5601",
+          "name": "BGH",
+          "results": 26
+        },
+        {
+          "id": "49809",
+          "name": "DJC",
+          "results": 26
+        },
+        {
+          "id": "448077",
+          "name": "Novatech",
+          "results": 26
+        },
+        {
+          "id": "4234692",
+          "name": "Mobile",
+          "results": 26
+        },
+        {
+          "id": "403225",
+          "name": "Case",
+          "results": 26
+        },
+        {
+          "id": "3653184",
+          "name": "Alto Impacto",
+          "results": 26
+        },
+        {
+          "id": "3383461",
+          "name": "Qualcomm",
+          "results": 26
+        },
+        {
+          "id": "278983",
+          "name": "G&G",
+          "results": 26
+        },
+        {
+          "id": "2623647",
+          "name": "FoxBox",
+          "results": 26
+        },
+        {
+          "id": "260751",
+          "name": "Inova",
+          "results": 26
+        },
+        {
+          "id": "2581903",
+          "name": "Only",
+          "results": 26
+        },
+        {
+          "id": "25475904",
+          "name": "EVM",
+          "results": 26
+        },
+        {
+          "id": "2399716",
+          "name": "Megalite",
+          "results": 26
+        },
+        {
+          "id": "21073870",
+          "name": "Soft Case",
+          "results": 26
+        },
+        {
+          "id": "20609165",
+          "name": "Unipha",
+          "results": 26
+        },
+        {
+          "id": "18875494",
+          "name": "IBS",
+          "results": 26
+        },
+        {
+          "id": "18553738",
+          "name": "Silicone Case",
+          "results": 26
+        },
+        {
+          "id": "18143685",
+          "name": "Sansung",
+          "results": 26
+        },
+        {
+          "id": "16097446",
+          "name": "Gorilla Glass",
+          "results": 26
+        },
+        {
+          "id": "15106613",
+          "name": "Mechanic",
+          "results": 26
+        },
+        {
+          "id": "13869023",
+          "name": "Samaung",
+          "results": 26
+        },
+        {
+          "id": "11876414",
+          "name": "Silicón",
+          "results": 26
+        },
+        {
+          "id": "11103364",
+          "name": "Verus",
+          "results": 26
+        },
+        {
+          "id": "103546",
+          "name": "Spigen",
+          "results": 26
+        },
+        {
+          "id": "9974",
+          "name": "Dash",
+          "results": 13
+        },
+        {
+          "id": "98392",
+          "name": "Nillkin",
+          "results": 13
+        },
+        {
+          "id": "8784",
+          "name": "Huawei",
+          "results": 13
+        },
+        {
+          "id": "8568981",
+          "name": "Ditron",
+          "results": 13
+        },
+        {
+          "id": "8200386",
+          "name": "Rock Space",
+          "results": 13
+        },
+        {
+          "id": "8022662",
+          "name": "Buenos Aires LED",
+          "results": 13
+        },
+        {
+          "id": "8",
+          "name": "Panasonic",
+          "results": 13
+        },
+        {
+          "id": "7985395",
+          "name": "Force",
+          "results": 13
+        },
+        {
+          "id": "7811417",
+          "name": "3D",
+          "results": 13
+        },
+        {
+          "id": "7678431",
+          "name": "LTC",
+          "results": 13
+        },
+        {
+          "id": "7414280",
+          "name": "Amitosai",
+          "results": 13
+        },
+        {
+          "id": "7338290",
+          "name": "Parner",
+          "results": 13
+        },
+        {
+          "id": "7124",
+          "name": "Genius",
+          "results": 13
+        },
+        {
+          "id": "6808405",
+          "name": "Tiendavirtual",
+          "results": 13
+        },
+        {
+          "id": "6780447",
+          "name": "Etheos",
+          "results": 13
+        },
+        {
+          "id": "6636702",
+          "name": "Neastore",
+          "results": 13
+        },
+        {
+          "id": "6306",
+          "name": "HTC",
+          "results": 13
+        },
+        {
+          "id": "5866747",
+          "name": "Libercam",
+          "results": 13
+        },
+        {
+          "id": "563",
+          "name": "Premium",
+          "results": 13
+        },
+        {
+          "id": "5618436",
+          "name": "Gorsh",
+          "results": 13
+        },
+        {
+          "id": "5367492",
+          "name": "Dcell",
+          "results": 13
+        },
+        {
+          "id": "5170143",
+          "name": "I-Tech",
+          "results": 13
+        },
+        {
+          "id": "5161062",
+          "name": "Block",
+          "results": 13
+        },
+        {
+          "id": "50584",
+          "name": "Netmak",
+          "results": 13
+        },
+        {
+          "id": "4857309",
+          "name": "DB",
+          "results": 13
+        },
+        {
+          "id": "4808",
+          "name": "Xerox",
+          "results": 13
+        },
+        {
+          "id": "4770412",
+          "name": "Helitec",
+          "results": 13
+        },
+        {
+          "id": "471755",
+          "name": "Incipio",
+          "results": 13
+        },
+        {
+          "id": "4523",
+          "name": "NEC",
+          "results": 13
+        },
+        {
+          "id": "4417949",
+          "name": "Airtech",
+          "results": 13
+        },
+        {
+          "id": "4366349",
+          "name": "Clear",
+          "results": 13
+        },
+        {
+          "id": "41179",
+          "name": "Flip",
+          "results": 13
+        },
+        {
+          "id": "410974",
+          "name": "Gadnic",
+          "results": 13
+        },
+        {
+          "id": "40652",
+          "name": "Nisuta",
+          "results": 13
+        },
+        {
+          "id": "399528",
+          "name": "Overtech",
+          "results": 13
+        },
+        {
+          "id": "38765",
+          "name": "Smart",
+          "results": 13
+        },
+        {
+          "id": "3527564",
+          "name": "Lucent",
+          "results": 13
+        },
+        {
+          "id": "3456814",
+          "name": "TWS",
+          "results": 13
+        },
+        {
+          "id": "3339183",
+          "name": "Smart Parts",
+          "results": 13
+        },
+        {
+          "id": "33243",
+          "name": "Disney",
+          "results": 13
+        },
+        {
+          "id": "3080134",
+          "name": "GMP",
+          "results": 13
+        },
+        {
+          "id": "30652",
+          "name": "Hisense",
+          "results": 13
+        },
+        {
+          "id": "3",
+          "name": "Philips",
+          "results": 13
+        },
+        {
+          "id": "2961171",
+          "name": "Guardian",
+          "results": 13
+        },
+        {
+          "id": "2864",
+          "name": "IBM",
+          "results": 13
+        },
+        {
+          "id": "2788161",
+          "name": "Multimarca",
+          "results": 13
+        },
+        {
+          "id": "27215723",
+          "name": "Mocoll",
+          "results": 13
+        },
+        {
+          "id": "26935127",
+          "name": "Full Cover",
+          "results": 13
+        },
+        {
+          "id": "2593830",
+          "name": "Kosmo",
+          "results": 13
+        },
+        {
+          "id": "25476286",
+          "name": "Detta3D",
+          "results": 13
+        },
+        {
+          "id": "24158053",
+          "name": "BSK",
+          "results": 13
+        },
+        {
+          "id": "2304173",
+          "name": "Incase",
+          "results": 13
+        },
+        {
+          "id": "2284293",
+          "name": "Ugreen",
+          "results": 13
+        },
+        {
+          "id": "21338538",
+          "name": "Tecnohogar",
+          "results": 13
+        },
+        {
+          "id": "2088733",
+          "name": "Univex",
+          "results": 13
+        },
+        {
+          "id": "20789128",
+          "name": "BaiBao Market",
+          "results": 13
+        },
+        {
+          "id": "19981484",
+          "name": "All Mobile",
+          "results": 13
+        },
+        {
+          "id": "19815675",
+          "name": "Alby",
+          "results": 13
+        },
+        {
+          "id": "188",
+          "name": "Electrolux",
+          "results": 13
+        },
+        {
+          "id": "183772",
+          "name": "Baseus",
+          "results": 13
+        },
+        {
+          "id": "18136343",
+          "name": "Rinonera",
+          "results": 13
+        },
+        {
+          "id": "17412611",
+          "name": "Alpin",
+          "results": 13
+        },
+        {
+          "id": "17074816",
+          "name": "TW",
+          "results": 13
+        },
+        {
+          "id": "16839668",
+          "name": "Ba Hidro",
+          "results": 13
+        },
+        {
+          "id": "16495117",
+          "name": "Ondatuonda Didí",
+          "results": 13
+        },
+        {
+          "id": "16495114",
+          "name": "My Choice",
+          "results": 13
+        },
+        {
+          "id": "16095925",
+          "name": "Silicona",
+          "results": 13
+        },
+        {
+          "id": "16024801",
+          "name": "Cellbox",
+          "results": 13
+        },
+        {
+          "id": "15893771",
+          "name": "Royalcell",
+          "results": 13
+        },
+        {
+          "id": "15886508",
+          "name": "Coper Light",
+          "results": 13
+        },
+        {
+          "id": "15795",
+          "name": "Noganet",
+          "results": 13
+        },
+        {
+          "id": "15635",
+          "name": "AKG",
+          "results": 13
+        },
+        {
+          "id": "15555",
+          "name": "Luxell",
+          "results": 13
+        },
+        {
+          "id": "15443787",
+          "name": "Transparente",
+          "results": 13
+        },
+        {
+          "id": "15303899",
+          "name": "A22",
+          "results": 13
+        },
+        {
+          "id": "149762",
+          "name": "Cameron Sino",
+          "results": 13
+        },
+        {
+          "id": "14951745",
+          "name": "Fashion Case",
+          "results": 13
+        },
+        {
+          "id": "14779317",
+          "name": "Artesanal",
+          "results": 13
+        },
+        {
+          "id": "145303",
+          "name": "Motomo",
+          "results": 13
+        },
+        {
+          "id": "14255083",
+          "name": "Clear Case",
+          "results": 13
+        },
+        {
+          "id": "13951472",
+          "name": "Cafele",
+          "results": 13
+        },
+        {
+          "id": "13923780",
+          "name": "Auriculares",
+          "results": 13
+        },
+        {
+          "id": "13920920",
+          "name": "IGLUFIVE",
+          "results": 13
+        },
+        {
+          "id": "13869360",
+          "name": "Samsung Galaxy",
+          "results": 13
+        },
+        {
+          "id": "13772573",
+          "name": "AAA",
+          "results": 13
+        },
+        {
+          "id": "13759503",
+          "name": "Full",
+          "results": 13
+        },
+        {
+          "id": "13758530",
+          "name": "Sam´s",
+          "results": 13
+        },
+        {
+          "id": "13752364",
+          "name": "CL",
+          "results": 13
+        },
+        {
+          "id": "13654866",
+          "name": "Generica Alt",
+          "results": 13
+        },
+        {
+          "id": "13653324",
+          "name": "Geeker",
+          "results": 13
+        },
+        {
+          "id": "13629564",
+          "name": "Hoco.",
+          "results": 13
+        },
+        {
+          "id": "13583376",
+          "name": "T&G",
+          "results": 13
+        },
+        {
+          "id": "13473880",
+          "name": "Brand",
+          "results": 13
+        },
+        {
+          "id": "13371556",
+          "name": "China",
+          "results": 13
+        },
+        {
+          "id": "13250952",
+          "name": "WIL",
+          "results": 13
+        },
+        {
+          "id": "13205795",
+          "name": "Other",
+          "results": 13
+        },
+        {
+          "id": "12937097",
+          "name": "Otec",
+          "results": 13
+        },
+        {
+          "id": "12707328",
+          "name": "Grêmio",
+          "results": 13
+        },
+        {
+          "id": "12355314",
+          "name": "Baluni Market",
+          "results": 13
+        },
+        {
+          "id": "12047972",
+          "name": "Emicol",
+          "results": 13
+        },
+        {
+          "id": "11869723",
+          "name": "C&H",
+          "results": 13
+        },
+        {
+          "id": "11452587",
+          "name": "Goospery",
+          "results": 13
+        },
+        {
+          "id": "11115087",
+          "name": "One For All",
+          "results": 13
+        },
+        {
+          "id": "11072954",
+          "name": "Candy-Ho",
+          "results": 13
+        },
+        {
+          "id": "10314378",
+          "name": "Ocean Gadgets",
+          "results": 13
+        },
+        {
+          "id": "101354",
+          "name": "Fly",
+          "results": 13
+        }
+      ]
+    },
+    {
+      "id": "ITEM_CONDITION",
+      "name": "Condición",
+      "type": "STRING",
+      "values": [
+        {
+          "id": "2230284",
+          "name": "Nuevo",
+          "results": 51415
+        },
+        {
+          "id": "2230581",
+          "name": "Usado",
+          "results": 11180
+        },
+        {
+          "id": "2230582",
+          "name": "Reacondicionado",
+          "results": 52
+        }
+      ]
+    },
+    {
+      "id": "category",
+      "name": "Categorías",
+      "type": "text",
+      "values": [
+        {
+          "id": "MLA1055",
+          "name": "Celulares y Smartphones",
+          "results": 154
+        },
+        {
+          "id": "MLA3502",
+          "name": "Accesorios para Celulares",
+          "results": 39339
+        },
+        {
+          "id": "MLA3813",
+          "name": "Repuestos de Celulares",
+          "results": 15592
+        },
+        {
+          "id": "MLA1000",
+          "name": "Electrónica, Audio y Video",
+          "results": 8294
+        },
+        {
+          "id": "MLA1648",
+          "name": "Computación",
+          "results": 4306
+        },
+        {
+          "id": "MLA417704",
+          "name": "Smartwatches y Accesorios",
+          "results": 719
+        },
+        {
+          "id": "MLA5726",
+          "name": "Electrodomésticos y Aires Ac.",
+          "results": 660
+        },
+        {
+          "id": "MLA3937",
+          "name": "Joyas y Relojes",
+          "results": 299
+        },
+        {
+          "id": "MLA3025",
+          "name": "Libros, Revistas y Comics",
+          "results": 126
+        },
+        {
+          "id": "MLA1368",
+          "name": "Arte, Librería y Mercería",
+          "results": 98
+        },
+        {
+          "id": "MLA1039",
+          "name": "Cámaras y Accesorios",
+          "results": 71
+        },
+        {
+          "id": "MLA401278",
+          "name": "Lentes de Realidad Virtual",
+          "results": 70
+        },
+        {
+          "id": "MLA1500",
+          "name": "Construcción",
+          "results": 56
+        },
+        {
+          "id": "MLA1430",
+          "name": "Ropa y Accesorios",
+          "results": 28
+        },
+        {
+          "id": "MLA5725",
+          "name": "Accesorios para Vehículos",
+          "results": 14
+        },
+        {
+          "id": "MLA1367",
+          "name": "Antigüedades y Colecciones",
+          "results": 14
+        },
+        {
+          "id": "MLA1144",
+          "name": "Consolas y Videojuegos",
+          "results": 14
+        },
+        {
+          "id": "MLA1574",
+          "name": "Hogar, Muebles y Jardín",
+          "results": 14
+        },
+        {
+          "id": "MLA10616",
+          "name": "Tarifadores y Cabinas",
+          "results": 14
+        },
+        {
+          "id": "MLA1053",
+          "name": "Telefonía Fija e Inalámbrica",
+          "results": 14
+        },
+        {
+          "id": "MLA1915",
+          "name": "Otros",
+          "results": 42
+        }
+      ]
+    },
+    {
+      "id": "product",
+      "name": "Producto",
+      "type": "text",
+      "values": [
+        {
+          "id": "MLA19716195",
+          "name": "Cargador Rapido Tipo C 2.4a Soul 2 Usb Para Samsung Motorola",
+          "results": 1
+        },
+        {
+          "id": "MLA19722829",
+          "name": "Force E4040",
+          "results": 1
+        },
+        {
+          "id": "MLA19722898",
+          "name": "Soporte Fijo Tv Lcd Led 42 47 49 50 55 Cs4040 Samsung Sony Color Negro",
+          "results": 1
+        },
+        {
+          "id": "MLA19854903",
+          "name": "Cable usb 2.0 Samsung Cable USB-C to USB-C negro con entrada USB Tipo C salida USB Tipo C",
+          "results": 1
+        },
+        {
+          "id": "MLA19885668",
+          "name": "Cable usb 3.0 negro con entrada USB salida USB Tipo C",
+          "results": 1
+        },
+        {
+          "id": "MLA19940760",
+          "name": "Cable Micro Usb Carga Rapida 2 Metros Para Samsung Motorola",
+          "results": 1
+        },
+        {
+          "id": "MLA19971935",
+          "name": "Cable Usb C 2 Metros Usb 3.0 Carga Rapida Turbo Power 3a Color Blanco",
+          "results": 1
+        },
+        {
+          "id": "MLA20004698",
+          "name": "Cable Cargador Para Samsung Tab2 Tablet P5110 P5113 P5100",
+          "results": 1
+        },
+        {
+          "id": "MLA21008654",
+          "name": "Cable Samsung Tipo C A Tipo C 1mt ",
+          "results": 1
+        },
+        {
+          "id": "MLA21089752",
+          "name": "Cargador Inalambrico Qi Universal Carga Rapida 15w Magsafe.",
+          "results": 1
+        },
+        {
+          "id": "MLA21300989",
+          "name": "Adaptador Audio Usb Tipo C A Plug Jack 3.5mm Para Samsung",
+          "results": 1
+        },
+        {
+          "id": "MLA21302940",
+          "name": "Funda Transparente Reforzada Para S20 Fe",
+          "results": 1
+        },
+        {
+          "id": "MLA21402195",
+          "name": "Cable Usb Tipo C 45 W Rapido Compatible Con Samsung Moto Color Negro",
+          "results": 1
+        },
+        {
+          "id": "MLA21435332",
+          "name": "Auricular Manos Libres Para iPhone iPad iPod Samsung Blanco",
+          "results": 1
+        },
+        {
+          "id": "MLA21794621",
+          "name": "Cable Samsung Tipo C- Original- Flex",
+          "results": 1
+        },
+        {
+          "id": "MLA22019452",
+          "name": "Brazalete Deportivo Para Celular Soul 6\" - 6,5\" Negro para Correr Universal",
+          "results": 1
+        },
+        {
+          "id": "MLA22196502",
+          "name": "Cargador Tipo C 25w Carga Rápido Para Samsung + Cable",
+          "results": 1
+        },
+        {
+          "id": "MLA22382037",
+          "name": "Cargador Inalambrico Para Samsung iPhone Rapido Celular Noga Q03",
+          "results": 1
+        },
+        {
+          "id": "MLA22620974",
+          "name": "Cargador Rapido Dual Cable Micro Usb Para Samsung Motorola",
+          "results": 1
+        },
+        {
+          "id": "MLA22756831",
+          "name": "Cargador Rápido + Cable Para Samsung S7 S5 S6 S4 A3 A5 A6 A7",
+          "results": 1
+        },
+        {
+          "id": "MLA22774429",
+          "name": "Cargador Para Samsung A30/ A31 /a32 /a33 Carga Rápida 25w",
+          "results": 1
+        },
+        {
+          "id": "MLA23428805",
+          "name": "Samsung USB Tipo C",
+          "results": 1
+        },
+        {
+          "id": "MLA24199397",
+          "name": "Cargador Inalambrico Carga Rapida Qi Para Samsung iPhone Color Gris",
+          "results": 1
+        },
+        {
+          "id": "MLA24455280",
+          "name": "Noga cable impresora USB-A USB-B",
+          "results": 1
+        },
+        {
+          "id": "MLA24455285",
+          "name": "Cable Usb Impresora Cable Para Impresora Hp Samsung A/b Noga Color Transparente",
+          "results": 1
+        },
+        {
+          "id": "MLA24455290",
+          "name": "Cable Tipo C Usb Carga Rapida Celular Cargador Samsung Noga Color Blanco",
+          "results": 1
+        }
+      ]
+    }
+  ]

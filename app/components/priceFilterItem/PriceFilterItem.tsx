@@ -40,13 +40,14 @@ const PriceFilterItem: React.FC<FilterPriceProps> = ({ filters, filterId }) => {
     dispatch(setFilterMaxPrice(inputMax));
     dispatch(setFilterMinPrice(inputMin));
     const range =
-      inputMax && inputMin
-        ? `${inputMin}-${inputMax}`
-        : inputMax
-        ? `*-{$inputMax}`
-        : inputMin
-        ? `${inputMin}-*`
-        : "";
+    inputMax && inputMin
+      ? `${inputMin}-${inputMax}`
+      : inputMax
+      ? `*-${inputMax}`
+      : inputMin
+      ? `${inputMin}-*`
+      : "";
+  
 
     handleOptions(range);
   };
@@ -82,12 +83,14 @@ const PriceFilterItem: React.FC<FilterPriceProps> = ({ filters, filterId }) => {
           className={styles.input}
           placeholder="Mínimo"
           onChange={handleChangeMin}
+          type="number"
         />
         <span className={styles.separator}>—</span>
         <input
           className={styles.input}
           placeholder="Máximo"
           onChange={handleChangeMax}
+          type="number"
         />
         <button className={styles.button} type="submit">
           <Image height={30} width={30} src={arrowIcon} alt="Arrow right" />

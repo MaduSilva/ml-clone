@@ -29,3 +29,13 @@
   width: 100px;
   height: auto;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .title {
+    text-align: center
+  }
+}
