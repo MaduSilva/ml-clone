@@ -2,6 +2,9 @@
 
 Este é um projeto de clone da aba de produtos do Mercado Livre, desenvolvido para fins educacionais, com o objetivo de praticar habilidades em desenvolvimento frontend e simular a exibição de produtos de uma plataforma de e-commerce.
 
+![image](https://github.com/user-attachments/assets/7a9c7673-f289-4e66-bc06-69980676c922)
+
+
 ## 🎯 Objetivo
 
 O projeto consiste em criar uma interface que simula a aba de produtos do Mercado Livre, exibindo uma lista de produtos com suas respectivas informações, como título, preço, imagem, e outros detalhes. O objetivo é replicar a experiência do usuário ao navegar pelos produtos e aprimorar habilidades em React, TypeScript, integração com APIs, e estilização de interfaces.
