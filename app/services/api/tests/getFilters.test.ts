@@ -1,5 +1,5 @@
-import { getFilters } from "../services/api/getFilters";
-import filterMock from "./mocks/filterMock.json";
+import { getFilters } from "../getFilters";
+import filterMock from "../../../tests/mocks/filterMock.json";
 
 describe("getFilters fetch", () => {
   beforeEach(() => {

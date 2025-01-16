@@ -1,5 +1,5 @@
-import { getProducts } from "../services/api/getProducts";
-import productMock from "./mocks/productMock.json";
+import { getProducts } from "../getProducts";
+import productMock from "../../../tests/mocks/productMock.json";
 
 describe("getProducts fetch", () => {
   beforeEach(() => {

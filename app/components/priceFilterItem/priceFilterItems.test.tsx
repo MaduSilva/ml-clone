@@ -1,9 +1,9 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { Provider } from "react-redux";
-import PriceFilterItems from "../components/priceFilterItem/PriceFilterItem";
-import { mockStore } from "./mocks/mockStore";
-import filterMock from "./mocks/filterMock.json";
+import PriceFilterItems from "./PriceFilterItem";
+import { mockStore } from "../../tests/mocks/mockStore";
+import filterMock from "../../tests/mocks/filterMock.json";
 
 describe("PriceFilterItems Component", () => {
   it("should renders PriceFilterItems component", () => {

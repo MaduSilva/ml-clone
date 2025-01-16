@@ -1,8 +1,8 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import SortOrderBy from "../components/sortOrderBy/SortOrderBy";
+import SortOrderBy from "./sortOrderBy";
 import { Provider } from "react-redux";
-import { mockStore } from "./mocks/mockStore";
+import { mockStore } from "../../tests/mocks/mockStore";
 
 describe("SortOrderBy Component", () => {
   it("should render SortOrderBy component with initial state", () => {
